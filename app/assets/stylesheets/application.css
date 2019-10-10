@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+ /*topページ用*/
+strong {
+    font-weight: bold;
+}
+.top_text{
+    margin: 33px;
+}
+a {
+    color: #000;
+}
+a:visited {
+    color: #666;
+}
+a:hover {
+    background-color: #000;
+    color: white;
+}
+
+ /*indexページ用*/
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.th1 {
+    padding-bottom: 5px;
+    width: 190px;
+}
+.th2 {
+    padding-bottom: 5px;
+    width: 398px;
+}
+.td2 {
+    padding-bottom: 5px;
+    width: 390px;
+}
+td {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ /*showページ用*/
+.flash-text {
+	color: green;
+	margin: 33px;
+}
+.table_title {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+ /*editページ用*/
+.submit_title{
+	margin: 0;
+}
+.submit_button{
+	display: block;
+}
+.submit_coloum{
+	margin-bottom: 10px;
+}
+.errors{
+	color: red;
+}
+

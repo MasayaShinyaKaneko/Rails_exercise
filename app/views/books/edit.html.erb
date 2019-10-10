@@ -1,0 +1,18 @@
+<h1>Editing Book</h1>
+<!-- form_for部分 -->
+<%= form_for(@book) do |f| %>
+<% if @book.errors.any? %>
+  <h3 class="errors">入力した内容にエラーが<%= @book.errors.count %>件あります</h3>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li class="errors"><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+    <p class="submit_title">Title</p>
+    <%= f.text_field :title ,class:"submit_coloum" %>
+    <p class="submit_title">Body</p>
+    <%= f.text_area :body ,class:"submit_coloum" %>
+    <%= f.submit 'Update Book' ,class:"submit_button" %>
+<% end %>
+<p><%= link_to "Show", book_path(@book.id) %> | <a href="/books">Back</a></p>
